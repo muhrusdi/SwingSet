@@ -28,9 +28,7 @@ struct PlaygroundReader {
     }
     
     private var swiftFilePaths: [NSString]? {
-        let enumerator = fileManager.enumerator(atPath: playgroundPath)
-
-        return (enumerator?.allObjects as? [NSString])?
+        return (enumerator.allObjects as? [NSString])?
             .filter { $0.pathExtension == Constants.PathExtensions.swift }
     }
     
