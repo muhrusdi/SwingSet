@@ -1,10 +1,5 @@
 import Foundation
 
-/**
- - Add note about `UIKit` imports
- - Docs
-*/
-
 // MARK: - Argument Parsing
 
 let arguments = ArgumentParser.process(arguments: Process.arguments)
